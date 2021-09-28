@@ -19,6 +19,8 @@ Command | Action
 `knega changed build` | runs build commands for applications with changes
 `knega changed analyze` | runs analyze commands for applications with changes
 `knega all release` | runs release commands for all applications
+`knega all postrelease` | runs post release commands for all applications
+`knega all migrate` | runs migrate commands for all applications
 
 #### Individual actions
 Command | Action
