@@ -19,6 +19,8 @@ Command | Action
 `knega changed build` | runs build commands for applications with changes
 `knega changed analyze` | runs analyze commands for applications with changes
 `knega all release` | runs release commands for all applications
+`knega all postrelease` | runs post release commands for all applications
+`knega all migrate` | runs migrate commands for all applications
 
 #### Individual actions
 Command | Action
@@ -28,6 +30,7 @@ Command | Action
 `knega docker create` | Builds based on dockerfile if exists, otherwise tries herokuish build
 `knega docker upload` | Upload docker image to repository
 `knega docker test` | Runs tests (only works if application matches a herokuish buildpack)
+`knega single <action> <applicationName>` | runs action for application
 
 ## Inspiration
 ### Individual actions
