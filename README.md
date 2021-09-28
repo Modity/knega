@@ -30,6 +30,7 @@ Command | Action
 `knega docker create` | Builds based on dockerfile if exists, otherwise tries herokuish build
 `knega docker upload` | Upload docker image to repository
 `knega docker test` | Runs tests (only works if application matches a herokuish buildpack)
+`knega single <action> <applicationName>` | runs action for application
 
 ## Inspiration
 ### Individual actions
