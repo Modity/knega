@@ -54,6 +54,7 @@ type Application struct {
     build []string
     analyze []string
     release []string
+    migrate []string
   }
   repository Repository
 }
@@ -99,6 +100,7 @@ func initializeApplication(applicationPath string) Application {
   application.commands.build = injectVariablesArray(applicationConfiguration.commands.build, application)
   application.commands.analyze = injectVariablesArray(applicationConfiguration.commands.analyze, application)
   application.commands.release = injectVariablesArray(applicationConfiguration.commands.release, application)
+  application.commands.migrate = injectVariablesArray(applicationConfiguration.commands.migrate, application)
 
   application.environment.name = applicationConfiguration.environment.name
   application.environment.urls = applicationConfiguration.environment.urls
