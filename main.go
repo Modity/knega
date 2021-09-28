@@ -215,6 +215,13 @@ func main() {
             return all("release")
           },
         },
+        {
+          Name:  "migrate",
+          Usage: "Run migrate command in all applications, passing in $INPUTS_HASH",
+          Action: func(context *cli.Context) error {
+            return all("migrate")
+          },
+        },
       },
     },
     {

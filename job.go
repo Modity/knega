@@ -22,6 +22,8 @@ func createJob(repository Repository, application Application, action string) Jo
       commands = application.commands.analyze
     case "release":
       commands = application.commands.release
+    case "migrate":
+      commands = application.commands.migrate
     default:
       log.Fatal("Action is not available")
   }

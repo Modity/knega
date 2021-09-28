@@ -43,6 +43,7 @@ type ApplicationConfiguration struct {
     build []string
     analyze []string
     release []string
+    migrate []string
   }
 }
 
@@ -82,6 +83,7 @@ func getApplicationConfiguration(configurationPath string, repository Repository
   configuration.commands.build = configurationFile.GetStringSlice("Build.commands")
   configuration.commands.analyze = configurationFile.GetStringSlice("Analyze.commands")
   configuration.commands.release = configurationFile.GetStringSlice("Release.commands")
+  configuration.commands.migrate = configurationFile.GetStringSlice("Migrate.commands")
 
   configuration.environment.name = os.Getenv("KNEGA_ENVIRONMENT")
   if configuration.environment.name != "" {
