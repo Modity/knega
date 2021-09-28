@@ -222,6 +222,13 @@ func main() {
             return all("migrate")
           },
         },
+        {
+          Name:  "postrelease",
+          Usage: "Run post release command in all applications, passing in $INPUTS_HASH",
+          Action: func(context *cli.Context) error {
+            return all("postrelease")
+          },
+        },
       },
     },
     {
